@@ -3,6 +3,7 @@ import { HashRouter, Route, Switch } from 'react-router-dom'
 import Helmet from 'react-helmet'
 import 'babel-polyfill'
 
+import gif from '../src/resources/Images/kt_gif.gif' 
 import './App.css';
 
 function App() {
@@ -14,8 +15,13 @@ function App() {
         <meta name="keywords" cpntent="greenport, restaurant, bar, gallery hotel, gallery, hotel" />
       </Helmet>
 
+      <div>
+        <img style={{width: '100%'}} src={gif}/>
+      </div>
+
     </div>
-    
+
+
   );
 }
 
