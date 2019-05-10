@@ -8,16 +8,20 @@ import HomePage from './pages/HomePage';
 
 function App() {
   return (
-    <div>
+    <React.Fragment>
       <Helmet>
         <title>Kon-Tiki Greenport</title>
         <meta name="description" content="Kon-Tiki Restaurant and Bar at The Gallery Hotel" />
         <meta name="keywords" cpntent="greenport, restaurant, bar, gallery hotel, gallery, hotel" />
       </Helmet>
 
-      <HomePage/>
+      <HashRouter basename="/">
+        <Switch>
+          <Route exact path="/" component={HomePage}/>
+        </Switch>
+      </HashRouter>
 
-    </div>
+    </React.Fragment>
 
 
   );
