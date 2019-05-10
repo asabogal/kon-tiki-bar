@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
-import Navbar from '../components/navigation/Navbar';
-
-import gif from '../resources/Images/kt_gif.gif'
+import Navbar from '../components/layout/Navbar';
+import LandingImage from '../components/layout/LandingImage'
 
 class HomePage extends Component {
   render() {
     return (
      <React.Fragment>
         <Navbar/>
-        <div>
-          <img style={{width: '100%'}} src={gif}/>
-        </div>
+        <LandingImage/>
      </React.Fragment> 
     );
   }
